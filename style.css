@@ -2,28 +2,87 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-image: url(https://st2.depositphotos.com/4157421/8143/v/950/depositphotos_81433534-stock-illustration-numbers-seamless-background.jpg);
+    background-position: 30%;
 }
 section{
     width: 100%;
     text-align: center;
 }
 form{
+    padding-top: 50px;
     margin: 100px;
+    height: 350px;
     text-align: center;
-    background-color: aqua;
-
+    background-color: #ccc;
+    border: #ccc 1px solid;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px 0;
+}
+span{
+    font-size: 22px;
+}
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+/* Classes -----------*/
+.resultado_conta{
+    background-color: white;
+    padding-top: 15px;
+    width: 200px;
+    min-height: 100px;
+    border-radius: 10px;
+}
+.inline{
+    display: inline-block;
+    padding: 5px;
 }
 .am{
     display: flex;
     justify-content: center;
+    
 }
 .nm{
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    padding: 20px 100px;
 }
 form .rd{
     display: flex;
     flex-direction: column;
-
+    align-items: first baseline;
+}
+[type=number]{
+    font-size: 17px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 0;
+}
+[type=submit]{
+    padding: 7px;
+    margin: 20px;
+    background-color: #11ec11;
+    box-shadow: 0px 5px 10px 0px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 0;
+}
+[type=submit]:hover{
+    animation-name: botao;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+/* Animações -----------*/
+@keyframes botao{
+    from{
+        box-shadow: 0;
+    }
+    to{
+        box-shadow: 0px 5px 15px 0px #11ec11;
+    }
 }
